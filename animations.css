@@ -323,21 +323,26 @@ body{
 
 
 .sun{
-    width:50px;
+    width: 50px;
+    display: block;
+    margin-left: calc(50vw - 25px);
     height: 50px;
     background-color: yellow;
-    top:50vh;
-    left:50vw;
-    margin-left: -25px;
-    margin-top: -25px;
     position: absolute;
     border-radius: 25px;
+    margin-top: calc(50vh - 25px);
 }
 
 .milky-way{
-    display: block;margin:auto;top:200px;
-    //background-color: white;
-    height: 100%;width: 100%;
+    display: block;
+    margin:auto;
+    top:16px;
+    /*background-color: white;*/
+    
+    /*max-height: 700px;*/
+    height: 700px;
+    width: 100%;
+    position: absolute;
 }
 
 /**

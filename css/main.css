@@ -1,0 +1,236 @@
+body {
+  background-color: #072559;
+  background-image: url("./img/stars.png"); }
+
+/**
+    Set up the animation by giving it a name and setting the "break points" for the animation
+**/
+@keyframes mercury {
+  0% {
+    opacity: 1;
+    margin-top: 335px;
+    transform: rotate(0deg) translate(-75px) rotate(0deg); }
+  25% { }
+  50% { }
+  75% { }
+  100% {
+    opacity: 1;
+    margin-top: 335px;
+    transform: rotate(360deg) translate(-75px) rotate(-360deg); } }
+
+@keyframes moon {
+  0% {
+    transform: rotate(0deg) translate(-40px) rotate(0deg); }
+  100% {
+    transform: rotate(360deg) translate(-40px) rotate(-360deg); } }
+
+@keyframes venus {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) translate(-150px) rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) translate(-150px) rotate(-360deg); } }
+
+@keyframes earth {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) translate(-200px) rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) translate(-200px) rotate(-360deg); } }
+
+@keyframes mars {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) translate(-235px) rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) translate(-235px) rotate(-360deg); } }
+
+@keyframes jupiter {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) translate(-275px) rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) translate(-275px) rotate(-360deg); } }
+
+@keyframes saturn {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) translate(-345px) rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) translate(-345px) rotate(-360deg); } }
+
+@keyframes uranus {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) translate(-385px) rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) translate(-385px) rotate(-360deg); } }
+
+@keyframes neptune {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) translate(-425px) rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) translate(-425px) rotate(-360deg); } }
+
+/**
+    Calling of the animation
+**/
+.mercury {
+  animation-name: mercury;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  left: 50%;
+  margin: auto;
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background-image: url("img/mercury.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.venus {
+  animation-name: venus;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  background-image: url("img/venus.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  position: absolute; }
+
+.earth {
+  animation-name: earth;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-image: url("img/earth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  position: absolute; }
+
+.mars {
+  animation-name: mars;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 27px;
+  width: 27px;
+  border-radius: 50px;
+  background-image: url("img/mars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  position: absolute; }
+
+.jupiter {
+  animation-name: jupiter;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background-image: url("img/jupiter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  position: absolute; }
+
+.saturn {
+  animation-name: saturn;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 60px;
+  width: 60px;
+  border-radius: 0px;
+  background-image: url("img/saturn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  position: absolute; }
+
+.uranus {
+  animation-name: uranus;
+  animation-duration: 19s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 60px;
+  width: 45px;
+  border-radius: 0px;
+  background-image: url("img/uranus.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  position: absolute; }
+
+.neptune {
+  animation-name: neptune;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  background-image: url("img/neptune.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  position: absolute; }
+
+.sun {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: yellow;
+  margin-top: calc(50vh - 25px);
+  margin-left: calc(50vw - 25px); }
+
+.moon {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 12px;
+  position: relative;
+  animation-name: moon;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.milky-way {
+  display: block;
+  margin: auto;
+  top: 16px;
+  height: 700px;
+  width: 100%;
+  position: absolute; }
+
+.sass .other {
+  color: red;
+  background-color: blue;
+  font-weight: 900; }
+
+/**
+    Create set of transitions for the credits to fade in and out
+**/

@@ -1,0 +1,27 @@
+{
+  "name": "solar-system-animation",
+  "version": "1.0.0",
+  "description": "SASS/CSS Animations on the solar system",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conorjohn/Solar-System-Animation.git"
+  },
+  "keywords": [
+    "CSS",
+    "Animation",
+    "SASS"
+  ],
+  "author": "Conor John",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conorjohn/Solar-System-Animation/issues"
+  },
+  "homepage": "https://github.com/conorjohn/Solar-System-Animation#readme",
+  "dependencies": {
+    "node-sass": "^4.5.2"
+  }
+}

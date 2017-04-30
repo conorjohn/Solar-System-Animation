@@ -1,5 +1,6 @@
 body{
     background-color: #072559;
+    background-image: url('./img/stars.png');
 }
 
 /**
@@ -323,26 +324,27 @@ body{
 
 
 .sun{
-    width: 50px;
-    display: block;
-    margin-left: calc(50vw - 25px);
-    height: 50px;
-    background-color: yellow;
     position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
     border-radius: 25px;
+    background-color: yellow;
     margin-top: calc(50vh - 25px);
+    margin-left: calc(50vw - 25px);
 }
 
 .milky-way{
     display: block;
     margin:auto;
     top:16px;
-    /*background-color: white;*/
-    
-    /*max-height: 700px;*/
     height: 700px;
     width: 100%;
     position: absolute;
+}
+
+.paralax{
+    
 }
 
 /**

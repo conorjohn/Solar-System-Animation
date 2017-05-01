@@ -182,19 +182,14 @@ body{
 **/
 
 .mercury{
-    animation-name: mercury;
-    animation-duration: 5s;
-    animation-timing-function: linear; //or ease-in-out
+    //make notes of animation options
+    @include planetClasses(mercury, 5s, infinite, linear);
     animation-delay: 2s;
-
-    animation-iteration-count: infinite;
     //animation-direction: reverse; //or "alternate"
 
 
     position: absolute;
-    //margin-top: 50px;
     left: 50%;
-    // top:50%;
     margin: auto;
     height: 25px;
     width: 25px;
@@ -205,10 +200,7 @@ body{
 }
 
 .venus{
-    animation-name: venus;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include planetClasses(venus, 8s, infinite, linear);
 
     height: 35px;
     width: 35px;
@@ -222,10 +214,7 @@ body{
 }
 
 .earth{
-    animation-name: earth;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include planetClasses(earth, 10s, infinite, linear);
 
     height: 30px;
     width: 30px;
@@ -239,10 +228,7 @@ body{
 }
 
 .mars{
-    animation-name: mars;
-    animation-duration: 11s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include planetClasses(mars, 11s, infinite, linear);
 
     height: 27px;
     width: 27px;
@@ -298,10 +284,7 @@ body{
 }
 
 .neptune{
-    animation-name: neptune;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include planetClasses(neptune, 20s, infinite, linear);
 
     height: 30px;
     width: 30px;

@@ -176,6 +176,14 @@ body{
     }
 
 }
+/***
+    Looking to write a function or loop to produce each of the planets classes, might need to use collections or maps as an input
+**/
+// @for($planet as $system)
+@function plant-orbit() {
+
+    @return
+}
 
 /**
     Calling of the animation

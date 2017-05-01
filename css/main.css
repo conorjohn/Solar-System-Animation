@@ -1,20 +1,15 @@
 body {
   background-color: #072559;
-  background-image: url("./img/stars.png"); }
+  background-image: url("../img/stars.png"); }
 
 /**
     Set up the animation by giving it a name and setting the "break points" for the animation
 **/
 @keyframes mercury {
   0% {
-    opacity: 1;
     margin-top: 335px;
     transform: rotate(0deg) translate(-75px) rotate(0deg); }
-  25% { }
-  50% { }
-  75% { }
   100% {
-    opacity: 1;
     margin-top: 335px;
     transform: rotate(360deg) translate(-75px) rotate(-360deg); } }
 
@@ -26,10 +21,8 @@ body {
 
 @keyframes venus {
   0% {
-    opacity: 1;
     transform: rotate(0deg) translate(-150px) rotate(0deg); }
   100% {
-    opacity: 1;
     transform: rotate(360deg) translate(-150px) rotate(-360deg); } }
 
 @keyframes earth {
@@ -95,7 +88,7 @@ body {
   height: 25px;
   width: 25px;
   border-radius: 50px;
-  background-image: url("img/mercury.png");
+  background-image: url("../img/mercury.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -107,7 +100,7 @@ body {
   height: 35px;
   width: 35px;
   border-radius: 50px;
-  background-image: url("img/venus.png");
+  background-image: url("../img/venus.png");
   background-repeat: no-repeat;
   background-size: cover;
   left: 50%;
@@ -121,7 +114,7 @@ body {
   height: 30px;
   width: 30px;
   border-radius: 50px;
-  background-image: url("img/earth.png");
+  background-image: url("../img/earth.png");
   background-repeat: no-repeat;
   background-size: cover;
   left: 50%;
@@ -135,7 +128,7 @@ body {
   height: 27px;
   width: 27px;
   border-radius: 50px;
-  background-image: url("img/mars.png");
+  background-image: url("../img/mars.png");
   background-repeat: no-repeat;
   background-size: cover;
   left: 50%;
@@ -149,7 +142,7 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50px;
-  background-image: url("img/jupiter.png");
+  background-image: url("../img/jupiter.png");
   background-repeat: no-repeat;
   background-size: cover;
   left: 50%;
@@ -163,7 +156,7 @@ body {
   height: 60px;
   width: 60px;
   border-radius: 0px;
-  background-image: url("img/saturn.png");
+  background-image: url("../img/saturn.png");
   background-repeat: no-repeat;
   background-size: cover;
   left: 50%;
@@ -177,7 +170,7 @@ body {
   height: 60px;
   width: 45px;
   border-radius: 0px;
-  background-image: url("img/uranus.png");
+  background-image: url("../img/uranus.png");
   background-repeat: no-repeat;
   background-size: cover;
   left: 50%;
@@ -191,7 +184,7 @@ body {
   height: 30px;
   width: 30px;
   border-radius: 0px;
-  background-image: url("img/neptune.png");
+  background-image: url("../img/neptune.png");
   background-repeat: no-repeat;
   background-size: cover;
   left: 50%;

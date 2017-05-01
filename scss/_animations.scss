@@ -1,0 +1,10 @@
+@mixin animation($pos, $rotation){
+
+}
+
+@mixin planetClasses($name, $duration, $count, $timing){
+	animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $count;
+    animation-timing-function: $timing;
+}

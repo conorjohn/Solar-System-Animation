@@ -1,6 +1,8 @@
+@import 'animations';
+
 body{
     background-color: #072559;
-    background-image: url('./img/stars.png');
+    background-image: url('../img/stars.png');
 }
 
 /**
@@ -9,27 +11,13 @@ body{
 
 @keyframes mercury{
     0%{
-        opacity: 1;
         margin-top: 335px;
-        //-webkit-transform: scale(1.1);
         transform: rotate(0deg)
                    translate(-75px)
                    rotate(0deg);
     }
-    25%{
-        //opacity:0.75;
-    }
-    50%{
-        //opacity: 0.5;
-        //-webkit-transform: scale(1.5);
-    }
-    75%{
-        //opacity: 0.75;
-    }
     100%{
-        opacity: 1;
         margin-top: 335px;
-        //-webkit-transform: scale(1);
         transform: rotate(360deg)
                    translate(-75px) 
                    rotate(-360deg);
@@ -52,18 +40,12 @@ body{
 
 @keyframes venus{
     0%{
-        opacity: 1;
-        //margin-top: 25px;
-        //-webkit-transform: scale(1.1);
         transform: rotate(0deg)
                    translate(-150px)
                    rotate(0deg);
     }
     
     100%{
-        opacity: 1;
-        //margin-top: 25px;
-        //-webkit-transform: scale(1);
         transform: rotate(360deg)
                    translate(-150px) 
                    rotate(-360deg);
@@ -74,8 +56,6 @@ body{
 @keyframes earth{
     0%{
         opacity: 1;
-        //margin-top: 25px;
-        //-webkit-transform: scale(1.1);
         transform: rotate(0deg)
                    translate(-200px)
                    rotate(0deg);
@@ -218,7 +198,7 @@ body{
     height: 25px;
     width: 25px;
     border-radius: 50px;
-    background-image: url('img/mercury.png');
+    background-image: url('../img/mercury.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -232,7 +212,7 @@ body{
     height: 35px;
     width: 35px;
     border-radius: 50px;
-    background-image: url('img/venus.png');
+    background-image: url('../img/venus.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -248,7 +228,7 @@ body{
     height: 30px;
     width: 30px;
     border-radius: 50px;
-    background-image: url('img/earth.png');
+    background-image: url('../img/earth.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -264,7 +244,7 @@ body{
     height: 27px;
     width: 27px;
     border-radius: 50px;
-    background-image: url('img/mars.png');
+    background-image: url('../img/mars.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -272,15 +252,12 @@ body{
 }
 
 .jupiter{
-    animation-name: jupiter;
-    animation-duration: 14s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include planetClasses(jupiter, 14s, infinite, linear);
 
     height: 40px;
     width: 40px;
     border-radius: 50px;
-    background-image: url('img/jupiter.png');
+    background-image: url('../img/jupiter.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -288,15 +265,12 @@ body{
 }
 
 .saturn{
-    animation-name: saturn;
-    animation-duration: 17s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include planetClasses(saturn, 17s, infinite, linear);
 
     height: 60px;
     width: 60px;
     border-radius: 0px;
-    background-image: url('img/saturn.png');
+    background-image: url('../img/saturn.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -304,15 +278,12 @@ body{
 }
 
 .uranus{
-    animation-name: uranus;
-    animation-duration: 19s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include planetClasses(uranus, 19s, infinite, linear);
 
     height: 60px;
     width: 45px;
     border-radius: 0px;
-    background-image: url('img/uranus.png');
+    background-image: url('../img/uranus.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -328,7 +299,7 @@ body{
     height: 30px;
     width: 30px;
     border-radius: 0px;
-    background-image: url('img/neptune.png');
+    background-image: url('../img/neptune.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;

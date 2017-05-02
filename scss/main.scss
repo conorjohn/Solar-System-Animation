@@ -180,7 +180,28 @@ body{
     Looking to write a function or loop to produce each of the planets classes, might need to use collections or maps as an input
 **/
 // @for($planet as $system)
-@function plant-orbit() {
+$earth: (
+    planet: earth,
+    size:30px,
+    orbit: 24s
+)
+
+$mercury: (
+    planet: mercury,
+    size:20px,
+    orbit: 19s
+)
+
+$venus: (
+    planet: venus,
+    size:30px,
+    orbit: 20s
+)
+
+$planet-list: $mercury, $venus, $earth;
+
+@function plant-orbit($earth) {
+    @include planetClasses()
 
     @return
 }
